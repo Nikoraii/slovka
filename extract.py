@@ -7,7 +7,7 @@ def save_words_to_js(word_lists, output_dir):
             file.write(f'const words = {words};')
 
 def extract_words_by_length(dictionary_file, output_dir, lengths):
-    word_lists = {length: [] for length in lengths}  # Create an empty list for each length
+    word_lists = {length: [] for length in lengths}
 
     with codecs.open(dictionary_file, 'r', encoding='utf-8') as file:
         for word in file:
@@ -18,9 +18,8 @@ def extract_words_by_length(dictionary_file, output_dir, lengths):
 
     save_words_to_js(word_lists, output_dir)
 
-# Example usage
-dictionary_file = 'Serbian.txt'  # Path to your dictionary file
-output_dir = 'js_output'  # Path to output directory for JavaScript files
-lengths = [5, 6, 7, 8]  # Specify the desired word lengths
+dictionary_file = 'Serbian.txt'
+output_dir = '/assets/js/words'
+lengths = [5, 6, 7, 8]
 
 extract_words_by_length(dictionary_file, output_dir, lengths)
