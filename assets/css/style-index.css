@@ -1,0 +1,69 @@
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#container {
+    text-align: center;
+    width: 35%;
+    margin: 10em auto 0 auto;
+    border: 2px solid #15803d;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #container {
+      width: 90%;
+      margin: 6em auto 0 auto;
+    }
+  }
+
+@media only screen and (max-width: 912px) {
+  #container {
+    width: 90%;
+    margin: 4.5em auto 0 auto;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+    #container {
+      width: 90%;
+      margin: 3em auto 0 auto;
+    }
+  }
+
+a {
+    display: inline-block;
+}
+
+#play {
+    background-color: #16a34a;
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+#play:hover {
+    transform: scale(1.1);
+}
+
+#box {
+    padding-bottom: 5px;
+    margin-top: 1.5em;
+    border-top: 1px solid #a8a29e;
+}
+
+.play-link {
+    background-color: #2563eb;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.play-link:hover {
+    transform: scale(1.1);
+}
